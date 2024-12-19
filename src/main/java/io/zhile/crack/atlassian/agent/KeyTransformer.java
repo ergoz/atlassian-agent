@@ -48,8 +48,8 @@ public class KeyTransformer implements ClassFileTransformer {
                 b64f = "java.util.Base64.getDecoder().decode";
             } catch (ClassNotFoundException e) {
                 try {
-                    Class.forName("javax.xml.bind.DatatypeConverter");
-                    cp.importPackage("javax.xml.bind.DatatypeConverter");
+                    Class.forName("jakarta.xml.bind.DatatypeConverter");
+                    cp.importPackage("jakarta.xml.bind.DatatypeConverter");
                     b64f = "DatatypeConverter.parseBase64Binary";
                 } catch (ClassNotFoundException e1) {
                     throw new RuntimeException(e1);

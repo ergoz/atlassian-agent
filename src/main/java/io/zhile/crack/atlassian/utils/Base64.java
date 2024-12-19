@@ -1,6 +1,6 @@
 package io.zhile.crack.atlassian.utils;
 
-import javax.xml.bind.DatatypeConverter;
+import jakarta.xml.bind.DatatypeConverter;
 
 /**
  * @author pengzhile
